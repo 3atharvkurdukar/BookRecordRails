@@ -1,1 +1,8 @@
-<h1>Hello, Welcome to the Library!</h1>
+<h1>Book Details</h1>
+<ul>
+  <% @books.each do | book | %>
+  <li>
+    <%= book.title %> ==> <%= book.body %>
+  </li>
+  <% end %>
+</ul>
